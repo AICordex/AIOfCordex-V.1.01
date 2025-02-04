@@ -15,7 +15,6 @@ Fetches metadata of a Solana token.
   "totalSupply": "1000000"
 }
 
----
 
 ## **6. Tests (Unit Testing)**  
 Write test cases using **Jest** for validation.
