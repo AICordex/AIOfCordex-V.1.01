@@ -1,22 +1,29 @@
-## **File Structure (Detailed Explanation)**  
+---
 
+# **File Structure (Detailed Explanation)**  
+
+A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Scanner Terminal**, with explanations for each file and folder.
+
+## **Project Directory Tree**  
+
+```
 Leonord-Scanner-Terminal/
-│── src/                     # Source code folder (Main application logic)
+│── src/                     
 │   ├── scanner.js           # Main token scanner logic
 │   ├── blockchainUtils.js   # Blockchain interaction utilities
 │   ├── config.js            # Configuration settings (RPC URLs, constants)
-│── docs/                    # Documentation files
+│── docs/                    
 │   ├── API.md               # API reference documentation
 │   ├── CONTRIBUTING.md      # Contribution guidelines
 │   ├── USAGE.md             # How to use the scanner
 │   ├── FAQ.md               # Frequently Asked Questions
-│── tests/                   # Unit tests for validation
+│── tests/                   
 │   ├── scanner.test.js      # Jest test cases for scanner functions
 │   ├── blockchainUtils.test.js # Tests for blockchain utility functions
-│── .github/                 # GitHub Actions for CI/CD
-│   ├── workflows/           # Workflows for automated testing
-│   │   ├── test.yml         # GitHub action for running tests
-│── public/                  # Static assets
+│── .github/                 
+│   ├── workflows/           
+│   │   ├── test.yml         # GitHub Actions for CI/CD
+│── public/                  
 │   ├── images/              # Screenshots, diagrams
 │   ├── logo.png             # Project logo
 │── .gitignore               # Ignored files (node_modules, environment files)
@@ -28,13 +35,13 @@ Leonord-Scanner-Terminal/
 
 ---
 
-### **Detailed Breakdown of Each Section**
+## **Detailed Breakdown of Each Section**  
 
-### 📂 **`src/` (Source Code)**
-This directory contains the core **Leonord Scanner Terminal** logic.
-- **`scanner.js`** – The main script that fetches token details, associated accounts, and balances.  
-- **`blockchainUtils.js`** – Utility functions to interact with the Solana blockchain.  
-- **`config.js`** – Configuration settings, such as **Solana RPC URL, API keys, and constants**.  
+### 📂 **`src/` - Source Code (Core Functionality)**
+This directory contains the **core functionality** of the **Leonord Scanner Terminal**.
+- **`scanner.js`** – Main script that fetches token details, associated accounts, and balances.  
+- **`blockchainUtils.js`** – Utility functions for blockchain interaction using the **Solana SDK (@solana/web3.js)**.  
+- **`config.js`** – Configuration settings (RPC URLs, constants, and environment variables).  
 
 **Example `config.js`:**
 ```javascript
@@ -43,12 +50,12 @@ export const SOLANA_RPC_URL = "https://api.mainnet-beta.solana.com";
 
 ---
 
-### 📂 **`docs/` (Documentation)**
-Contains documentation files for developers and users.
-- **`API.md`** – API reference guide for developers.  
+### 📂 **`docs/` - Documentation Files**  
+Contains documentation for **developers, contributors, and users**.
+- **`API.md`** – API reference guide with function descriptions and usage examples.  
 - **`CONTRIBUTING.md`** – Guidelines for contributing to the project.  
-- **`USAGE.md`** – Instructions on how to install, set up, and run the scanner.  
-- **`FAQ.md`** – Common troubleshooting questions and solutions.  
+- **`USAGE.md`** – Instructions on how to install, set up, and use the scanner.  
+- **`FAQ.md`** – Frequently Asked Questions and troubleshooting tips.  
 
 **Example `USAGE.md`:**
 ```md
@@ -71,10 +78,10 @@ Contains documentation files for developers and users.
 
 ---
 
-### 📂 **`tests/` (Unit Tests)**
-Contains automated tests to validate the scanner’s functionality.
-- **`scanner.test.js`** – Tests for the main scanner logic.  
-- **`blockchainUtils.test.js`** – Tests for blockchain-related functions.  
+### 📂 **`tests/` - Unit Tests**
+Contains test scripts for automated validation.
+- **`scanner.test.js`** – Jest tests for scanner functions.  
+- **`blockchainUtils.test.js`** – Tests for blockchain utility functions.  
 
 **Example `scanner.test.js`:**
 ```javascript
@@ -94,7 +101,7 @@ npm test
 
 ---
 
-### 📂 **`.github/workflows/` (GitHub Actions for CI/CD)**
+### 📂 **`.github/workflows/` - GitHub Actions (CI/CD)**
 Contains workflow files for **Continuous Integration (CI)** to automate testing.
 - **`test.yml`** – Runs tests automatically on every code push.  
 
@@ -117,15 +124,15 @@ jobs:
 
 ---
 
-### 📂 **`public/` (Static Assets)**
-Contains images, logos, and diagrams for documentation.
+### 📂 **`public/` - Static Assets**
+Contains **images, branding, and UI assets** for documentation.
 - **`images/`** – Screenshots, architecture diagrams.  
-- **`logo.png`** – Project branding.  
+- **`logo.png`** – Project branding/logo.  
 
 ---
 
-### 📄 **`.gitignore`**
-Defines files and folders to be ignored by Git.
+### 📄 **`.gitignore` - Git Ignore File**
+Defines **files and folders to be ignored** by Git.
 ```gitignore
 node_modules/
 .env
@@ -135,9 +142,11 @@ package-lock.json
 
 ---
 
-### 📄 **`LICENSE`**
-Defines the licensing terms. Use an **MIT License** if it's open-source.
+### 📄 **`LICENSE` - Open Source License**
+Defines the **legal terms** for using the project.  
+Use an **MIT License** if it's open-source.
 
+**Example:**
 ```md
 MIT License
 
@@ -147,17 +156,19 @@ of this software...
 
 ---
 
-### 📄 **`README.md`**
-The main entry point for anyone visiting the repository.
-- Overview of the project.
-- Installation and usage instructions.
-- API examples.
-- Contribution guidelines.
+### 📄 **`README.md` - Main Project Documentation**
+The first file visitors see.  
+Should include:
+- **Project Overview**
+- **Installation & Setup**
+- **Usage Instructions**
+- **API Documentation**
+- **Contribution Guidelines**
 
 ---
 
-### 📄 **`package.json`**
-Defines project metadata and dependencies.
+### 📄 **`package.json` - Project Dependencies & Scripts**
+Defines project metadata, dependencies, and commands.
 
 **Example:**
 ```json
@@ -175,3 +186,16 @@ Defines project metadata and dependencies.
   }
 }
 ```
+
+---
+
+### 📄 **`package-lock.json` - Dependency Lockfile**
+Automatically generated file that locks dependency versions.
+
+---
+
+## **Final Thoughts**
+With this well-structured setup, your **Leonord-Scanner-Terminal** project will be:
+✅ **Well-organized**  
+✅ **Scalable**  
+✅ **Easy for new contributors**  
