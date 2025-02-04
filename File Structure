@@ -1,0 +1,177 @@
+## **File Structure (Detailed Explanation)**  
+
+Leonord-Scanner-Terminal/
+│── src/                     # Source code folder (Main application logic)
+│   ├── scanner.js           # Main token scanner logic
+│   ├── blockchainUtils.js   # Blockchain interaction utilities
+│   ├── config.js            # Configuration settings (RPC URLs, constants)
+│── docs/                    # Documentation files
+│   ├── API.md               # API reference documentation
+│   ├── CONTRIBUTING.md      # Contribution guidelines
+│   ├── USAGE.md             # How to use the scanner
+│   ├── FAQ.md               # Frequently Asked Questions
+│── tests/                   # Unit tests for validation
+│   ├── scanner.test.js      # Jest test cases for scanner functions
+│   ├── blockchainUtils.test.js # Tests for blockchain utility functions
+│── .github/                 # GitHub Actions for CI/CD
+│   ├── workflows/           # Workflows for automated testing
+│   │   ├── test.yml         # GitHub action for running tests
+│── public/                  # Static assets
+│   ├── images/              # Screenshots, diagrams
+│   ├── logo.png             # Project logo
+│── .gitignore               # Ignored files (node_modules, environment files)
+│── LICENSE                  # Open-source license (MIT)
+│── README.md                # Project overview and setup
+│── package.json             # Project metadata, dependencies, scripts
+│── package-lock.json        # Lockfile for dependencies
+```
+
+---
+
+### **Detailed Breakdown of Each Section**
+
+### 📂 **`src/` (Source Code)**
+This directory contains the core **Leonord Scanner Terminal** logic.
+- **`scanner.js`** – The main script that fetches token details, associated accounts, and balances.  
+- **`blockchainUtils.js`** – Utility functions to interact with the Solana blockchain.  
+- **`config.js`** – Configuration settings, such as **Solana RPC URL, API keys, and constants**.  
+
+**Example `config.js`:**
+```javascript
+export const SOLANA_RPC_URL = "https://api.mainnet-beta.solana.com";
+```
+
+---
+
+### 📂 **`docs/` (Documentation)**
+Contains documentation files for developers and users.
+- **`API.md`** – API reference guide for developers.  
+- **`CONTRIBUTING.md`** – Guidelines for contributing to the project.  
+- **`USAGE.md`** – Instructions on how to install, set up, and run the scanner.  
+- **`FAQ.md`** – Common troubleshooting questions and solutions.  
+
+**Example `USAGE.md`:**
+```md
+# How to Use Leonord Scanner
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/Leonord-Scanner-Terminal.git
+   cd Leonord-Scanner-Terminal
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the scanner:
+   ```
+   node scanner.js
+   ```
+```
+
+---
+
+### 📂 **`tests/` (Unit Tests)**
+Contains automated tests to validate the scanner’s functionality.
+- **`scanner.test.js`** – Tests for the main scanner logic.  
+- **`blockchainUtils.test.js`** – Tests for blockchain-related functions.  
+
+**Example `scanner.test.js`:**
+```javascript
+import { getTokenDetails } from "../src/blockchainUtils";
+
+test("Fetch valid token details", async () => {
+  const token = await getTokenDetails("ValidTokenAddress");
+  expect(token).toHaveProperty("name");
+  expect(token).toHaveProperty("symbol");
+});
+```
+
+Run tests using:
+```bash
+npm test
+```
+
+---
+
+### 📂 **`.github/workflows/` (GitHub Actions for CI/CD)**
+Contains workflow files for **Continuous Integration (CI)** to automate testing.
+- **`test.yml`** – Runs tests automatically on every code push.  
+
+**Example `.github/workflows/test.yml`:**
+```yaml
+name: Run Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+```
+
+---
+
+### 📂 **`public/` (Static Assets)**
+Contains images, logos, and diagrams for documentation.
+- **`images/`** – Screenshots, architecture diagrams.  
+- **`logo.png`** – Project branding.  
+
+---
+
+### 📄 **`.gitignore`**
+Defines files and folders to be ignored by Git.
+```gitignore
+node_modules/
+.env
+package-lock.json
+.DS_Store
+```
+
+---
+
+### 📄 **`LICENSE`**
+Defines the licensing terms. Use an **MIT License** if it's open-source.
+
+```md
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software...
+```
+
+---
+
+### 📄 **`README.md`**
+The main entry point for anyone visiting the repository.
+- Overview of the project.
+- Installation and usage instructions.
+- API examples.
+- Contribution guidelines.
+
+---
+
+### 📄 **`package.json`**
+Defines project metadata and dependencies.
+
+**Example:**
+```json
+{
+  "name": "leonord-scanner-terminal",
+  "version": "1.0.0",
+  "description": "A terminal-based token scanner for Solana",
+  "main": "src/scanner.js",
+  "dependencies": {
+    "@solana/web3.js": "^1.67.0"
+  },
+  "scripts": {
+    "start": "node src/scanner.js",
+    "test": "jest"
+  }
+}
+```
