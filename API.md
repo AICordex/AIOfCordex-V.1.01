@@ -8,6 +8,7 @@ Fetches metadata of a Solana token.
 
 **Returns**:
 ```json
+
 {
   "name": "TokenName",
   "symbol": "TKN",
@@ -15,13 +16,13 @@ Fetches metadata of a Solana token.
   "totalSupply": "1000000"
 }
 
-
 ## **6. Tests (Unit Testing)**  
 Write test cases using **Jest** for validation.
 
 ### **Install Jest**
 ```bash
 npm install --save-dev jest
+
 import { getTokenDetails } from "../src/blockchainUtils";
 
 test("Fetch valid token details", async () => {
