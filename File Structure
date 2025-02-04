@@ -1,12 +1,10 @@
----
-
-# **File Structure (Detailed Explanation)**  
+**File Structure (Detailed Explanation)**  
 
 A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Scanner Terminal**, with explanations for each file and folder.
 
-## **Project Directory Tree**  
+**Project Directory Tree**  
 
-```
+plaintext
 Leonord-Scanner-Terminal/
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
@@ -31,132 +29,49 @@ Leonord-Scanner-Terminal/
 │── README.md                # Project overview and setup
 │── package.json             # Project metadata, dependencies, scripts
 │── package-lock.json        # Lockfile for dependencies
-```
 
----
+**Detailed Breakdown of Each Section**  
 
-## **Detailed Breakdown of Each Section**  
-
-### 📂 **`src/` - Source Code (Core Functionality)**
+📂 **`src/` - Source Code (Core Functionality)**
 This directory contains the **core functionality** of the **Leonord Scanner Terminal**.
 - **`scanner.js`** – Main script that fetches token details, associated accounts, and balances.  
 - **`blockchainUtils.js`** – Utility functions for blockchain interaction using the **Solana SDK (@solana/web3.js)**.  
 - **`config.js`** – Configuration settings (RPC URLs, constants, and environment variables).  
 
-**Example `config.js`:**
-```javascript
-export const SOLANA_RPC_URL = "https://api.mainnet-beta.solana.com";
-```
-
----
-
-### 📂 **`docs/` - Documentation Files**  
+📂 **`docs/` - Documentation Files**  
 Contains documentation for **developers, contributors, and users**.
 - **`API.md`** – API reference guide with function descriptions and usage examples.  
 - **`CONTRIBUTING.md`** – Guidelines for contributing to the project.  
 - **`USAGE.md`** – Instructions on how to install, set up, and use the scanner.  
 - **`FAQ.md`** – Frequently Asked Questions and troubleshooting tips.  
 
-**Example `USAGE.md`:**
-```md
-# How to Use Leonord Scanner
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/Leonord-Scanner-Terminal.git
-   cd Leonord-Scanner-Terminal
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Run the scanner:
-   ```
-   node scanner.js
-   ```
-```
-
----
-
-### 📂 **`tests/` - Unit Tests**
+📂 **`tests/` - Unit Tests**
 Contains test scripts for automated validation.
 - **`scanner.test.js`** – Jest tests for scanner functions.  
 - **`blockchainUtils.test.js`** – Tests for blockchain utility functions.  
 
-**Example `scanner.test.js`:**
-```javascript
-import { getTokenDetails } from "../src/blockchainUtils";
-
-test("Fetch valid token details", async () => {
-  const token = await getTokenDetails("ValidTokenAddress");
-  expect(token).toHaveProperty("name");
-  expect(token).toHaveProperty("symbol");
-});
-```
-
-Run tests using:
-```bash
-npm test
-```
-
----
-
-### 📂 **`.github/workflows/` - GitHub Actions (CI/CD)**
+📂 **`.github/workflows/` - GitHub Actions (CI/CD)**
 Contains workflow files for **Continuous Integration (CI)** to automate testing.
 - **`test.yml`** – Runs tests automatically on every code push.  
 
-**Example `.github/workflows/test.yml`:**
-```yaml
-name: Run Tests
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
-```
-
----
-
-### 📂 **`public/` - Static Assets**
+📂 **`public/` - Static Assets**
 Contains **images, branding, and UI assets** for documentation.
 - **`images/`** – Screenshots, architecture diagrams.  
 - **`logo.png`** – Project branding/logo.  
 
----
-
-### 📄 **`.gitignore` - Git Ignore File**
+📄 **`.gitignore` - Git Ignore File**
 Defines **files and folders to be ignored** by Git.
-```gitignore
+gitignore
 node_modules/
 .env
 package-lock.json
 .DS_Store
-```
 
----
-
-### 📄 **`LICENSE` - Open Source License**
+📄 **`LICENSE` - Open Source License**
 Defines the **legal terms** for using the project.  
 Use an **MIT License** if it's open-source.
 
-**Example:**
-```md
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software...
-```
-
----
-
-### 📄 **`README.md` - Main Project Documentation**
+📄 **`README.md` - Main Project Documentation**
 The first file visitors see.  
 Should include:
 - **Project Overview**
@@ -165,13 +80,10 @@ Should include:
 - **API Documentation**
 - **Contribution Guidelines**
 
----
-
-### 📄 **`package.json` - Project Dependencies & Scripts**
+📄 **`package.json` - Project Dependencies & Scripts**
 Defines project metadata, dependencies, and commands.
 
-**Example:**
-```json
+json
 {
   "name": "leonord-scanner-terminal",
   "version": "1.0.0",
@@ -185,16 +97,12 @@ Defines project metadata, dependencies, and commands.
     "test": "jest"
   }
 }
-```
 
----
 
-### 📄 **`package-lock.json` - Dependency Lockfile**
+📄 **`package-lock.json` - Dependency Lockfile**
 Automatically generated file that locks dependency versions.
 
----
-
-## **Final Thoughts**
+**Final Thoughts**
 With this well-structured setup, your **Leonord-Scanner-Terminal** project will be:
 ✅ **Well-organized**  
 ✅ **Scalable**  
