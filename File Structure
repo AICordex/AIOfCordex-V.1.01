@@ -1,10 +1,117 @@
-**File Structure (Detailed Explanation)**  
+# **Leonord-Scanner-Terminal**  
 
-A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Scanner Terminal**, with explanations for each file and folder.
+**Accuracy, clarity, and valuable insights for traders and developers.**  
 
-**Project Directory Tree**  
+## **Overview**  
 
-plaintext
+Leonord Scanner Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+
+## **Features**  
+
+✅ **Direct Blockchain Access** – Connects directly to Solana via the SDK, bypassing intermediaries.  
+✅ **Comprehensive Token Insights** – Retrieve token **name, symbol, total supply, and decimals**.  
+✅ **Associated Account Details** – Fetch token holders and account balances.  
+✅ **Fast & Reliable** – Optimized for traders, developers, and crypto enthusiasts.  
+✅ **Easy Integration** – Simple **JavaScript functions** for fetching Solana token details.
+
+## **Technology Stack**  
+
+- **Language**: JavaScript  
+- **Blockchain**: Solana  
+- **Library**: `@solana/web3.js`  
+- **Runtime**: Node.js  
+
+## **Installation**  
+
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/yourusername/Leonord-Scanner-Terminal.git
+   cd Leonord-Scanner-Terminal
+   ```
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Run the scanner:  
+   ```bash
+   node scanner.js
+   ```
+
+## **Usage**  
+
+### **1. Fetch Token Details**
+```javascript
+import { getTokenDetails } from "./blockchainUtils.js";
+
+const tokenAddress = "YourTokenAddressHere"; // Replace with a real token address
+
+getTokenDetails(tokenAddress)
+  .then((details) => console.log(details))
+  .catch((error) => console.error(error));
+```
+📌 **Retrieves:**  
+- Token Name  
+- Symbol  
+- Decimals  
+- Total Supply  
+
+### **2. Fetch Associated Accounts**  
+```javascript
+import { getAssociatedAccounts } from "./blockchainUtils.js";
+
+const tokenAddress = "YourTokenAddressHere";
+
+getAssociatedAccounts(tokenAddress)
+  .then((accounts) => console.log(accounts))
+  .catch((error) => console.error(error));
+```
+📌 **Retrieves:**  
+- Account Addresses Holding the Token  
+- Account Balances  
+
+### **3. Full Token Analysis**  
+```javascript
+import { analyzeToken } from "./scanner.js";
+
+const tokenAddress = "YourTokenAddressHere";
+
+analyzeToken(tokenAddress);
+```
+📌 **Logs:**  
+- Token Details  
+- Associated Accounts & Balances  
+
+## **Example Output**  
+```bash
+Token Details:
+Name: ExampleToken
+Symbol: EXMPL
+Decimals: 6
+Total Supply: 1,000,000
+
+Associated Accounts:
+1. Address: ABC123...XYZ, Balance: 500
+2. Address: DEF456...XYZ, Balance: 250
+```
+
+## **Error Handling**  
+The scanner includes robust error handling for:  
+- Invalid token addresses  
+- Network issues  
+- Missing token data  
+
+Example error output:  
+```bash
+Error fetching token data: Token data not found for this address.
+```
+
+## **File Structure (Detailed Explanation)**  
+
+A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Scanner Terminal**.
+
+### **Project Directory Tree**  
+
+```plaintext
 Leonord-Scanner-Terminal/
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
@@ -29,81 +136,11 @@ Leonord-Scanner-Terminal/
 │── README.md                # Project overview and setup
 │── package.json             # Project metadata, dependencies, scripts
 │── package-lock.json        # Lockfile for dependencies
+```
 
-**Detailed Breakdown of Each Section**  
+## **Contributing**  
+Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
-📂 **`src/` - Source Code (Core Functionality)**
-This directory contains the **core functionality** of the **Leonord Scanner Terminal**.
-- **`scanner.js`** – Main script that fetches token details, associated accounts, and balances.  
-- **`blockchainUtils.js`** – Utility functions for blockchain interaction using the **Solana SDK (@solana/web3.js)**.  
-- **`config.js`** – Configuration settings (RPC URLs, constants, and environment variables).  
+## **License**  
+📜 MIT License – Free to use and modify.
 
-📂 **`docs/` - Documentation Files**  
-Contains documentation for **developers, contributors, and users**.
-- **`API.md`** – API reference guide with function descriptions and usage examples.  
-- **`CONTRIBUTING.md`** – Guidelines for contributing to the project.  
-- **`USAGE.md`** – Instructions on how to install, set up, and use the scanner.  
-- **`FAQ.md`** – Frequently Asked Questions and troubleshooting tips.  
-
-📂 **`tests/` - Unit Tests**
-Contains test scripts for automated validation.
-- **`scanner.test.js`** – Jest tests for scanner functions.  
-- **`blockchainUtils.test.js`** – Tests for blockchain utility functions.  
-
-📂 **`.github/workflows/` - GitHub Actions (CI/CD)**
-Contains workflow files for **Continuous Integration (CI)** to automate testing.
-- **`test.yml`** – Runs tests automatically on every code push.  
-
-📂 **`public/` - Static Assets**
-Contains **images, branding, and UI assets** for documentation.
-- **`images/`** – Screenshots, architecture diagrams.  
-- **`logo.png`** – Project branding/logo.  
-
-📄 **`.gitignore` - Git Ignore File**
-Defines **files and folders to be ignored** by Git.
-gitignore
-node_modules/
-.env
-package-lock.json
-.DS_Store
-
-📄 **`LICENSE` - Open Source License**
-Defines the **legal terms** for using the project.  
-Use an **MIT License** if it's open-source.
-
-📄 **`README.md` - Main Project Documentation**
-The first file visitors see.  
-Should include:
-- **Project Overview**
-- **Installation & Setup**
-- **Usage Instructions**
-- **API Documentation**
-- **Contribution Guidelines**
-
-📄 **`package.json` - Project Dependencies & Scripts**
-Defines project metadata, dependencies, and commands.
-
-json
-{
-  "name": "leonord-scanner-terminal",
-  "version": "1.0.0",
-  "description": "A terminal-based token scanner for Solana",
-  "main": "src/scanner.js",
-  "dependencies": {
-    "@solana/web3.js": "^1.67.0"
-  },
-  "scripts": {
-    "start": "node src/scanner.js",
-    "test": "jest"
-  }
-}
-
-
-📄 **`package-lock.json` - Dependency Lockfile**
-Automatically generated file that locks dependency versions.
-
-**Final Thoughts**
-With this well-structured setup, your **Leonord-Scanner-Terminal** project will be:
-✅ **Well-organized**  
-✅ **Scalable**  
-✅ **Easy for new contributors**  
