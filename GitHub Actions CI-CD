@@ -7,9 +7,18 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # O la versión que uses en tu proyecto
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # Más rápido y seguro en CI
+
       - name: Run tests
         run: npm test
