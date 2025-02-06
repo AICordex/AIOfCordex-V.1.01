@@ -1,4 +1,4 @@
-# Contributing to Leonord-Scanner-Terminal
+# Contributing to Exodia-Terminal
 
 ## How to Contribute
 1. Fork the repository.
