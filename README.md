@@ -1,10 +1,10 @@
-# **Leonord-Scanner-Terminal**  
+# **Exodia-Terminal**  
 
 **Accuracy, clarity, and valuable insights for traders and developers.**  
 
 ## **Overview**  
 
-Leonord Scanner Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+Exodia Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
 
 ## **Features**  
 
@@ -110,5 +110,3 @@ Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
 ## **License**  
 📜 MIT License – Free to use and modify.  
-
-(https://github.com/user-attachments/assets/535bf2cb-1f7a-4856-ad15-8fb182462401)
