@@ -1,11 +1,11 @@
 ## **File Structure (Detailed Explanation)**  
 
-A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Scanner Terminal**.
+A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Exodia Terminal**.
 
 ### **Project Directory Tree**  
 
 ```plaintext
-Leonord-Scanner-Terminal/
+Exodia-Terminal/
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
 │   ├── blockchainUtils.js   # Blockchain interaction utilities
