@@ -1,4 +1,4 @@
-# Contributing to Exodia-Terminal
+# Contributing to Mia-Terminal
 
 ## How to Contribute
 1. Fork the repository.
