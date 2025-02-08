@@ -1,10 +1,10 @@
-# **Exodia-Terminal**  
+# **Mia-Terminal**  
 
 **Accuracy, clarity, and valuable insights for traders and developers.**  
 
 ## **Overview**  
 
-Exodia Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+Mia Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
 
 ## **Features**  
 
