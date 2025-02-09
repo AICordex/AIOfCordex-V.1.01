@@ -1,10 +1,10 @@
-# **Mia-Terminal**  
+# **Neural Mind**  
 
 **Accuracy, clarity, and valuable insights for traders and developers.**  
 
 ## **Overview**  
 
-Mia Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+Neural Mind is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
 
 ## **Features**  
 
