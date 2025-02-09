@@ -1,4 +1,4 @@
-# Contributing to Mia-Terminal
+# Contributing to Neural Mind
 
 ## How to Contribute
 1. Fork the repository.
