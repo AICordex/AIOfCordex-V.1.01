@@ -1,4 +1,4 @@
-# Contributing to Neural Mind
+# Contributing to Sonos Terminal
 
 ## How to Contribute
 1. Fork the repository.
