@@ -1,11 +1,12 @@
-## **File Structure (Detailed Explanation)**  
+**File Structure (Detailed Explanation)**  
 
-A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Neural Mind**.
+A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Sonos Terminal**.
 
-### **Project Directory Tree**  
+**Project Directory Tree**  
 
-```plaintext
-Exodia-Terminal/
+**plaintext**
+
+Sonos-Terminal/
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
 │   ├── blockchainUtils.js   # Blockchain interaction utilities
