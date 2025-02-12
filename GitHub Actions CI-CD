@@ -15,10 +15,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # O la versión que uses en tu proyecto
+          node-version: 18  
 
       - name: Install dependencies
-        run: npm ci  # Más rápido y seguro en CI
+        run: npm ci  
 
       - name: Run tests
         run: npm test
