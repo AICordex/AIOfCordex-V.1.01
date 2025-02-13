@@ -1,4 +1,4 @@
-# Contributing to Sonos Terminal
+# Contributing to Violet Terminal
 
 ## How to Contribute
 1. Fork the repository.
