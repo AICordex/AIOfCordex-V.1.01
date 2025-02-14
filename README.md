@@ -1,10 +1,10 @@
-# **Violet Terminal**  
+# **Leonord AI**  
 
 **Accuracy, clarity, and valuable insights for traders and developers.**  
 
 ## **Overview**  
 
-Violet Terminal is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+LEONORD is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
 
 ## **Features**  
 
@@ -25,8 +25,8 @@ Violet Terminal is a powerful command-line tool designed to analyze tokens on th
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/Violet-Scanner-Terminal.git
-   cd Violet-Scanner-Terminal
+   git clone https://github.com/yourusername/Leonord-Scanner-Terminal.git
+   cd LEONORD-Scanner-Terminal
    ```
 2. Install dependencies:  
    ```bash
