@@ -1,4 +1,4 @@
-# Contributing to Violet Terminal
+# Contributing to Leonord AI
 
 ## How to Contribute
 1. Fork the repository.
