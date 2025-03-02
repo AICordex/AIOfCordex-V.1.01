@@ -1,12 +1,12 @@
 **File Structure (Detailed Explanation)**  
 
-A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Leonord Terminal**.
+A well-structured repository improves **maintainability, scalability, and collaboration**. Below is the **complete directory structure** for the **Cypher Terminal**.
 
 **Project Directory Tree**  
 
 **plaintext**
 
-Leonord-Terminal/
+Cypher-Terminal
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
 │   ├── blockchainUtils.js   # Blockchain interaction utilities
