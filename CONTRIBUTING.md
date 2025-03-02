@@ -1,4 +1,4 @@
-# Contributing to Leonord AI
+# Contributing to Cypher AI
 
 ## How to Contribute
 1. Fork the repository.
