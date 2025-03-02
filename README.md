@@ -1,10 +1,10 @@
-# **Leonord AI**  
+# **Cypher AI**  
 
 **Accuracy, clarity, and valuable insights for traders and developers.**  
 
 ## **Overview**  
 
-LEONORD is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+CYPHER is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
 
 ## **Features**  
 
@@ -25,8 +25,8 @@ LEONORD is a powerful command-line tool designed to analyze tokens on the **Sola
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/Leonord-Scanner-Terminal.git
-   cd LEONORD-Scanner-Terminal
+   git clone https://github.com/yourusername/CYPHER-Scanner-Terminal.git
+   cd CYPHER-Scanner-Terminal
    ```
 2. Install dependencies:  
    ```bash
