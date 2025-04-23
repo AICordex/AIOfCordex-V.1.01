@@ -1,5 +1,3 @@
----
-
 # **NycthIA**
 
 **Your Universal AI Coding Assistant – Code Anything, in Any Language.**
