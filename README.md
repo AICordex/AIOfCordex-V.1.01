@@ -1,112 +1,143 @@
-# **Cypher AI**  
+---
 
-**Accuracy, clarity, and valuable insights for traders and developers.**  
+# **NycthIA**
 
-## **Overview**  
+**Your Universal AI Coding Assistant – Code Anything, in Any Language.**
 
-CYPHER is a powerful command-line tool designed to analyze tokens on the **Solana blockchain**. It connects directly to the blockchain using the **Solana SDK (@solana/web3.js)**, providing **real-time, detailed insights** on token information, associated accounts, and balances.
+---
 
-## **Features**  
+## **Overview**
 
-✅ **Direct Blockchain Access** – Connects directly to Solana via the SDK, bypassing intermediaries.  
-✅ **Comprehensive Token Insights** – Retrieve token **name, symbol, total supply, and decimals**.  
-✅ **Associated Account Details** – Fetch token holders and account balances.  
-✅ **Fast & Reliable** – Optimized for traders, developers, and crypto enthusiasts.  
-✅ **Easy Integration** – Simple **JavaScript functions** for fetching Solana token details.
+**NycthIA** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, NycthIA empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
 
-## **Technology Stack**  
+Whether you're prototyping, building production-grade software, or exploring new languages, NycthIA is your intelligent companion—always ready to assist, in any syntax or style.
 
-- **Language**: JavaScript  
-- **Blockchain**: Solana  
-- **Library**: `@solana/web3.js`  
-- **Runtime**: Node.js  
+---
 
-## **Installation**  
+## **Key Features**
 
-1. Clone this repository:  
+✅ **Multilingual Code Generation** – Supports a wide range of programming languages: Python, JavaScript, Rust, Go, Solidity, TypeScript, and many more.  
+✅ **Context-Aware Suggestions** – Understands your intent and provides relevant, optimized code snippets.  
+✅ **Cross-Platform CLI Tool** – Lightweight, fast, and runs on any machine with Node.js.  
+✅ **Explainable Code Output** – Get clear explanations and rationales behind every generated block of code.  
+✅ **Customizable Prompts & Commands** – Tailor NycthIA to your preferred languages and frameworks.  
+✅ **Error Detection & Debugging** – Analyze existing code for bugs, suggest fixes, and improve readability.  
+
+---
+
+## **Technology Stack**
+
+- **Language**: JavaScript / Node.js  
+- **AI Integration**: Claude.AI, AnthropicAI  
+- **Interface**: Command-Line Interface (CLI)  
+- **Supported Languages**: 30+ programming languages  
+
+---
+
+## **Installation**
+
+1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/CYPHER-Scanner-Terminal.git
-   cd CYPHER-Scanner-Terminal
+   git clone https://github.com/yourusername/NycthIA-AI-Code-Assistant.git
+   cd NycthIA-AI-Code-Assistant
    ```
 2. Install dependencies:  
    ```bash
    npm install
    ```
-3. Run the scanner:  
+3. Launch the assistant:  
    ```bash
-   node scanner.js
+   node nycthia.js
    ```
 
-## **Usage**  
+---
 
-### **1. Fetch Token Details**
+## **Usage**
+
+### **1. Generate Code**
 ```javascript
-import { getTokenDetails } from "./blockchainUtils.js";
+import { generateCode } from "./aiUtils.js";
 
-const tokenAddress = "YourTokenAddressHere"; // Replace with a real token address
+const prompt = "Create a REST API in Go with user authentication";
 
-getTokenDetails(tokenAddress)
-  .then((details) => console.log(details))
+generateCode(prompt)
+  .then((code) => console.log(code))
   .catch((error) => console.error(error));
 ```
-📌 **Retrieves:**  
-- Token Name  
-- Symbol  
-- Decimals  
-- Total Supply  
+📌 Outputs:  
+- Full code snippet  
+- Comments and structure explanation  
 
-### **2. Fetch Associated Accounts**  
+---
+
+### **2. Debug Code**
 ```javascript
-import { getAssociatedAccounts } from "./blockchainUtils.js";
+import { debugCode } from "./aiUtils.js";
 
-const tokenAddress = "YourTokenAddressHere";
+const buggyCode = `function add(a, b) { return a + b; console.log("Done") }`;
 
-getAssociatedAccounts(tokenAddress)
-  .then((accounts) => console.log(accounts))
+debugCode(buggyCode)
+  .then((analysis) => console.log(analysis))
   .catch((error) => console.error(error));
 ```
-📌 **Retrieves:**  
-- Account Addresses Holding the Token  
-- Account Balances  
+📌 Detects:  
+- Syntax errors  
+- Logic flaws  
+- Unreachable code  
 
-### **3. Full Token Analysis**  
+---
+
+### **3. Translate Code Between Languages**
 ```javascript
-import { analyzeToken } from "./scanner.js";
+import { translateCode } from "./aiUtils.js";
 
-const tokenAddress = "YourTokenAddressHere";
+const pythonSnippet = `def greet(name): print(f"Hello, {name}")`;
 
-analyzeToken(tokenAddress);
+translateCode(pythonSnippet, "JavaScript")
+  .then((translated) => console.log(translated))
+  .catch((error) => console.error(error));
 ```
-📌 **Logs:**  
-- Token Details  
-- Associated Accounts & Balances  
+📌 Translates:  
+- Code semantics  
+- Functional structure  
+- Idiomatic patterns  
 
-## **Example Output**  
+---
+
+## **Example Output**
 ```bash
-Token Details:
-Name: ExampleToken
-Symbol: EXMPL
-Decimals: 6
-Total Supply: 1,000,000
-
-Associated Accounts:
-1. Address: ABC123...XYZ, Balance: 500
-2. Address: DEF456...XYZ, Balance: 250
+Prompt: "Build a simple to-do list in React"
+Output:
+- Full React component code
+- Explanation of state management
+- Tips for scalability and performance
 ```
 
-## **Error Handling**  
-The scanner includes robust error handling for:  
-- Invalid token addresses  
-- Network issues  
-- Missing token data  
+---
 
-Example error output:  
+## **Error Handling**
+
+NycthIA includes advanced error detection and resilience for:
+- Ambiguous prompts
+- Unsupported languages
+- AI service downtime
+
+Error message example:
 ```bash
-Error fetching token data: Token data not found for this address.
+Error: Unable to generate code – please refine your prompt or check your network connection.
 ```
 
-## **Contributing**  
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
+---
 
-## **License**  
-📜 MIT License – Free to use and modify.  
+## **Contributing**
+
+Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests to improve functionality and expand language support.
+
+---
+
+## **License**
+
+📜 MIT License – Open-source, freely available, and built for the community.
+
+---
+
