@@ -1,4 +1,4 @@
-Cypher-Terminal
+NycthIAProtocol
 
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
