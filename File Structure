@@ -1,4 +1,4 @@
-NycthIAProtocol
+VioletLabs
 
 │── src/                     
 │   ├── scanner.js           # Main token scanner logic
