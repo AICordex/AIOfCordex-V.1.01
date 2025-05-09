@@ -36,8 +36,8 @@ Whether you're prototyping, building production-grade software, or exploring new
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/NycthIA-AI-Code-Assistant.git
-   cd NycthIA-AI-Code-Assistant
+   git clone https://github.com/yourusername/VioletLab-AI-Code-Assistant.git
+   cd VioletLab-AI-Code-Assistant
    ```
 2. Install dependencies:  
    ```bash
@@ -45,7 +45,7 @@ Whether you're prototyping, building production-grade software, or exploring new
    ```
 3. Launch the assistant:  
    ```bash
-   node nycthia.js
+   node violet.js
    ```
 
 ---
@@ -115,7 +115,7 @@ Output:
 
 ## **Error Handling**
 
-NycthIA includes advanced error detection and resilience for:
+VioletLab includes advanced error detection and resilience for:
 - Ambiguous prompts
 - Unsupported languages
 - AI service downtime
