@@ -1,6 +1,6 @@
-# **Contributing to NycthIA**
+# **Contributing to VioletLabs**
 
-We welcome contributions from the community to help improve and expand Cypher AI. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
+We welcome contributions from the community to help improve and expand Violet. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
 
 ---
 
