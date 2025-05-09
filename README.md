@@ -1,4 +1,4 @@
-# **NycthIA**
+# **VioletLabs**
 
 **Your Universal AI Coding Assistant – Code Anything, in Any Language.**
 
@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-**NycthIA** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, NycthIA empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
+**VioletLabs** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, NycthIA empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
 
 Whether you're prototyping, building production-grade software, or exploring new languages, NycthIA is your intelligent companion—always ready to assist, in any syntax or style.
 
