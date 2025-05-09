@@ -1,4 +1,4 @@
-# **VioletLabs**
+# **LeonordAI**
 
 **Your Universal AI Coding Assistant – Code Anything, in Any Language.**
 
@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-**VioletLabs** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, NycthIA empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
+**LeonordAI** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, LeonordAI empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
 
 Whether you're prototyping, building production-grade software, or exploring new languages, Violet is your intelligent companion—always ready to assist, in any syntax or style.
 
@@ -36,8 +36,8 @@ Whether you're prototyping, building production-grade software, or exploring new
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/VioletLab-AI-Code-Assistant.git
-   cd VioletLab-AI-Code-Assistant
+   git clone https://github.com/yourusername/Leonord-AI-Code-Assistant.git
+   cd Leonord-AI-Code-Assistant
    ```
 2. Install dependencies:  
    ```bash
@@ -115,7 +115,7 @@ Output:
 
 ## **Error Handling**
 
-VioletLab includes advanced error detection and resilience for:
+LeonordAI includes advanced error detection and resilience for:
 - Ambiguous prompts
 - Unsupported languages
 - AI service downtime
