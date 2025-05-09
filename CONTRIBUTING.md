@@ -1,6 +1,6 @@
-# **Contributing to VioletLabs**
+# **Contributing to LeonordAI**
 
-We welcome contributions from the community to help improve and expand Violet. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
+We welcome contributions from the community to help improve and expand Leonord. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
 
 ---
 
