@@ -1,6 +1,6 @@
-# **Contributing to LeonordAI**
+# **Contributing to AICordex**
 
-We welcome contributions from the community to help improve and expand Leonord. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
+We welcome contributions from the community to help improve and expand Cordex. Whether it’s fixing bugs, adding features, or improving documentation—your input makes a difference.
 
 ---
 
