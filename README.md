@@ -1,4 +1,4 @@
-# **LeonordAI**
+# **AI Of Cordex**
 
 **Your Universal AI Coding Assistant – Code Anything, in Any Language.**
 
@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-**LeonordAI** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, LeonordAI empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
+**Cordex** is a state-of-the-art AI-driven command-line assistant capable of generating, analyzing, and debugging code across any programming language. Built with a focus on clarity, precision, and productivity, LeonordAI empowers developers, engineers, and technical teams to bring their ideas to life faster than ever before.
 
 Whether you're prototyping, building production-grade software, or exploring new languages, Violet is your intelligent companion—always ready to assist, in any syntax or style.
 
@@ -115,7 +115,7 @@ Output:
 
 ## **Error Handling**
 
-LeonordAI includes advanced error detection and resilience for:
+Cordex includes advanced error detection and resilience for:
 - Ambiguous prompts
 - Unsupported languages
 - AI service downtime
