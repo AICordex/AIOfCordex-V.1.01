@@ -45,7 +45,7 @@ Whether you're prototyping, building production-grade software, or exploring new
    ```
 3. Launch the assistant:  
    ```bash
-   node violet.js
+   node Cordex.js
    ```
 
 ---
