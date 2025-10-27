@@ -18,7 +18,7 @@ Whether you're prototyping, building production-grade software, or exploring new
 ✅ **Context-Aware Suggestions** – Understands your intent and provides relevant, optimized code snippets.  
 ✅ **Cross-Platform CLI Tool** – Lightweight, fast, and runs on any machine with Node.js.  
 ✅ **Explainable Code Output** – Get clear explanations and rationales behind every generated block of code.  
-✅ **Customizable Prompts & Commands** – Tailor NycthIA to your preferred languages and frameworks.  
+✅ **Customizable Prompts & Commands** – Cordex to your preferred languages and frameworks.  
 ✅ **Error Detection & Debugging** – Analyze existing code for bugs, suggest fixes, and improve readability.  
 
 ---
