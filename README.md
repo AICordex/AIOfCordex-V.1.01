@@ -36,8 +36,8 @@ Whether you're prototyping, building production-grade software, or exploring new
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/Leonord-AI-Code-Assistant.git
-   cd Leonord-AI-Code-Assistant
+   git clone https://github.com/yourusername/AI-Cordex-Code-Assistant.git
+   cd AI-Cordex-Code-Assistant
    ```
 2. Install dependencies:  
    ```bash
